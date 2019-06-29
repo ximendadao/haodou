@@ -7,7 +7,7 @@ def get_pwd():
     with open('haodou_js.js', 'r', encoding='UTF-8') as f:
         js2 = f.read()
         ctx2 = execjs.compile(js2)
-        pwd = ctx2.call("get_pwd", 'sjx123')
+        pwd = ctx2.call("get_pwd", '111111')  # 这里是密码
 
     return pwd
 
@@ -39,7 +39,7 @@ def login():
     password = get_pwd()
     sso_token = get_sso_token()
     data = {
-        'account': '18850156962',
+        'account': '188141411252',
         'type': '2',
         'password': password,
         'referer': 'http://www.haodou.com',
